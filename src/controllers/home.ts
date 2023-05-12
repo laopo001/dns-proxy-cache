@@ -1,9 +1,6 @@
 import { Context } from 'koa';
-import { log } from '../logger';
+import { log } from '../logger.js';
 import fetch from 'isomorphic-fetch'
-var crypto = require('crypto');
-
-const fs = require('fs');
 
 
 export default class HomeController {
@@ -19,4 +16,4 @@ export default class HomeController {
   }
 }
 
-module.exports = HomeController;
+export { HomeController };

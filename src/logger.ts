@@ -1,4 +1,4 @@
-const log4js = require("log4js");
+import log4js from 'log4js';
 import moment from 'moment';
 
 log4js.configure({

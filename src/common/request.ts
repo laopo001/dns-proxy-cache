@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch'
-import { log } from '../logger';
+import { log } from '../logger.js';
 
 
 export function request(url: string, options = {}, type: string = 'json', timeout: number = 3000): Promise<any> {

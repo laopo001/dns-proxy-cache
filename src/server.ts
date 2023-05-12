@@ -1,9 +1,9 @@
 import Koa from 'koa';
 import cors from '@koa/cors';
-import koaBody from "koa-body";
+import { koaBody } from "koa-body";
 
-import {  logger } from './logger';
-import { unprotectedRouter } from './routes';
+import { logger } from './logger.js';
+import { unprotectedRouter } from './routes.js';
 // 初始化 Koa 应用实例
 const app = new Koa();
 
